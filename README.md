@@ -8,11 +8,13 @@ This repo includes code for the paper:
 
 which extended the RNN-based goal-based course recommendation algorithm in Section 7 of the following paper 
 
-* [Jiang, W.](https://www.jennywjjiang.com), [Pardos, Z.A.](https://gse.berkeley.edu/zachary-pardos), Wei, Q. (2019) [Goal-based Course Recommendation.](https://dl.acm.org/doi/10.1145/3303772.3303814) In C. Brooks, R. Ferguson & U. Hoppe (Eds.) *Proceedings of the 9th International Conference on Learning Analytics and Knowledge* (LAK). ACM, Pages 36-45,
+* [Jiang, W.](https://www.jennywjjiang.com), [Pardos, Z.A.](https://gse.berkeley.edu/zachary-pardos), Wei, Q. (2019) [Goal-based Course Recommendation.](https://dl.acm.org/doi/10.1145/3303772.3303814) *Proceedings of the 9th International Conference on Learning Analytics and Knowledge* (LAK). ACM, Pages 36-45,
 
 by enhancing the learning process the personalized prerequisite courses for any target course, and also applying the goal-based recommendation framework to the MOOCs context, as illustrated here:
 
-![](illustration_figure.png)
+<center>
+<img src="illustration_figure.png" width="85%">
+</center>
 
 ## Dataset:
 
