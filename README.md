@@ -4,11 +4,11 @@
 
 This repo includes code for the paper:
 
-* [Weijie Jiang](https://jennywjjiang.com/) and [Zachary A. Pardos](https://gse.berkeley.edu/zachary-pardos), 2019. [Time Slice Imputation for Personalized Goal-based Recommendation in Higher Education.](https://dl.acm.org/doi/10.1145/3298689.3347030) In Thirteenth ACM Conference on Recommender Systems (RecSys'19). ACM, pp 506-510,
+* [Weijie Jiang](https://jennywjjiang.com/) and [Zachary A. Pardos](https://gse.berkeley.edu/zachary-pardos), 2019. [Time Slice Imputation for Personalized Goal-based Recommendation in Higher Education.](https://dl.acm.org/doi/10.1145/3298689.3347030) *In Proceedings of the Thirteenth ACM Conference on Recommender Systems (RecSys'19)*. ACM, pp 506-510,
 
 which extended the RNN-based goal-based course recommendation algorithm in Section 7 of the following paper: 
 
-* [Weijie Jiang](https://www.jennywjjiang.com), [Zachary A. Pardos](https://gse.berkeley.edu/zachary-pardos), Qiang Wei, 2019. [Goal-based Course Recommendation.](https://dl.acm.org/doi/10.1145/3303772.3303814) *Proceedings of the 9th International Conference on Learning Analytics and Knowledge* (LAK). ACM, Pages 36-45,
+* [Weijie Jiang](https://www.jennywjjiang.com), [Zachary A. Pardos](https://gse.berkeley.edu/zachary-pardos), Qiang Wei, 2019. [Goal-based Course Recommendation.](https://dl.acm.org/doi/10.1145/3303772.3303814) *In Proceedings of the 9th International Conference on Learning Analytics and Knowledge (LAK'19)*. ACM, Pages 36-45,
 
 by enhancing the learning process the personalized prerequisite courses for any target course, and also applying the goal-based recommendation framework to the MOOCs context, as illustrated here:
 
@@ -54,7 +54,7 @@ We selected the RNN-based grade prediction model without taking student major as
 * `cd grade_prediction`
 *  Set up arguments and hyperparameters for training in _grade\_prediction/utils.py_ (optional)
 *  training: `python train.py`
-	*  The best model(.pkl) and the log file that records the training loss and validation loss will be saved in [_grade\_prediction/models_](https://github.com/CAHLR/goal-based-recommendation/tree/master/grade_prediction/models). 
+	*  The best model(.pkl) and the log file that records the training loss and validation loss will be saved in _grade\_prediction/models_. 
 *  Set up _evaluated\_model\_path_ and _evaluated\_semester_ in _grade\_prediction/utils.py_, which corresponds to the model and semester you aim to evaluate (optional).
 *  evaluation: `python evaluate.py`. 
 	* Evaluation results will be printed out based on these metrics: 
