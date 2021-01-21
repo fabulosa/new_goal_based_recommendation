@@ -77,4 +77,15 @@ We selected the RNN-based grade prediction model without taking student major as
 	* This will print out (1) the number of well-performing students and under-performing students in this course in the evaluated semester, (2) the recommendation accuracy for the two groups of students.
 	* This will also save the enrollment histories and the recommended courses in the evaluated semester of these students to a csv file in [*goal\_based\_new/results*](https://github.com/fabulosa/new_goal_based_recommendation/tree/master/goal_based_new/results).
 
+## Contact and Citation
+Please do not hesitate to contact us (jiangwj[at]berkeley[dot]edu, pardos[at]berkeley[dot]edu) if you have any questions or encounter any problems in running the code. We appreciate your support and citation if you find this work useful.
 
+```
+@inproceedings{jiang2019time,
+  title={Time slice imputation for personalized goal-based recommendation in higher education},
+  author={Jiang, Weijie and Pardos, Zachary A},
+  booktitle={Proceedings of the 13th ACM Conference on Recommender Systems},
+  pages={506--510},
+  year={2019}
+}
+```
