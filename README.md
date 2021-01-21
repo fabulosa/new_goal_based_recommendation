@@ -54,7 +54,7 @@ We selected the RNN-based grade prediction model without taking student major as
 * `cd grade_prediction`
 *  Set up arguments and hyperparameters for training in _grade\_prediction/utils.py_ (optional)
 *  training: `python train.py`
-	*  The best model(.pkl) and the log file that records the training loss and validation loss will be saved in _grade\_prediction/models_. 
+	*  The best model(.pkl) and the log file that records the training loss and validation loss will be saved in [_grade\_prediction/models_](https://github.com/fabulosa/new_goal_based_recommendation/tree/master/grade_prediction/models). 
 *  Set up _evaluated\_model\_path_ and _evaluated\_semester_ in _grade\_prediction/utils.py_, which corresponds to the model and semester you aim to evaluate (optional).
 *  evaluation: `python evaluate.py`. 
 	* Evaluation results will be printed out based on these metrics: 
@@ -65,5 +65,16 @@ We selected the RNN-based grade prediction model without taking student major as
 		* true positive rate, true negative rate, false negative rate, and false positive rate on letter grade prediction and non-letter grade prediction
 		* F-score on letter grade prediction and non-letter grade prediction, overall F-score
 
+### New Goal-based Course Recommendation:
+
+**-- command**
+
+* `cd student_evaluation`
+* Set up arguments in _goal\_based\_new/utils.py_ (optional)
+* Generate filters: `python generate_filters.py`
+	* Filter files (.pkl) will be saved in the current directory.
+* Learn to generate goal-based recommendations: `python train.py --target_course xxx`, where `xxx `is the name of a course (e.g., Subject_33 101) that you intend to set as a goal(target) course.
+	* This will print out (1) the number of well-performing students and under-performing students in this course in the evaluated semester, (2) the recommendation accuracy for the two groups of students.
+	* This will also save the enrollment histories and the recommended courses in the evaluated semester of these students to a csv file in [*goal\_based\_new/results*](https://github.com/fabulosa/new_goal_based_recommendation/tree/master/goal_based_new/results).
 
 
